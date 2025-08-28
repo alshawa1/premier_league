@@ -6,7 +6,7 @@ import streamlit as st
 
 # --- Load Data ---
 import pandas as pd
-df = pd.read_csv("final_leg_data.csv")
+df = pd.read_csv("../final_leg_data.csv")
 # Filter players by position and minutes
 df_forwards = df[(df['player_position'] == 'Forward') & (df['Minutes Played'] > 100)]
 df_midfielders = df[(df['player_position'] == 'Midfielder') & (df['Minutes Played'] > 100)]
