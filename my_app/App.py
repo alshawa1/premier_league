@@ -5,7 +5,7 @@ from sklearn.multioutput import MultiOutputRegressor
 import streamlit as st
 
 # --- Load Data ---
-df = pd.read_csv("/content/final_leg_data.csv")
+df = pd.read_csv("data/final_leg_data.csv")
 # Filter players by position and minutes
 df_forwards = df[(df['player_position'] == 'Forward') & (df['Minutes Played'] > 100)]
 df_midfielders = df[(df['player_position'] == 'Midfielder') & (df['Minutes Played'] > 100)]
